@@ -1,0 +1,20 @@
+{
+  "name": "todo-list-nadirath-cdof2",
+  "version": "1.0.0",
+  "description": "A console-based To-Do List application",
+  "homepage": "https://github.com/Nadi0128/todo-list-nadirath-cdof2#readme",
+  "bugs": {
+    "url": "https://github.com/Nadi0128/todo-list-nadirath-cdof2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nadi0128/todo-list-nadirath-cdof2.git"
+  },
+  "license": "MIT",
+  "author": "Nadirath",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
