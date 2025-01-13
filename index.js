@@ -6,8 +6,7 @@ const rl = readline.createInterface({
 });
 const fs = require('fs');
 const path = require('path');
-// Chemin vers le fichier JSON
-const filePath = path.join(__dirname, 'tasks.json');
+
 
 
 let todos = []; // Liste des tâches
