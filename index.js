@@ -37,7 +37,7 @@ const showTasks = () => {
     } else {
         console.log(' Voici vos tâches :');
         todos.forEach((task, index) => {
-            console.log('${index + 1}. ${task}');
+            console.log(`${index + 1}. ${task}`);
         });
     }
     mainMenu();
