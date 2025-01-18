@@ -14,10 +14,10 @@ let todos = []; // Liste des tâches
 const showMenu = () => {
     console.log(`
 ======== TODO LIST ========
-1. Ajouter une tâche
-2. Afficher les tâches
-3. Supprimer une tâche
-4. Quitter
+1. Add a task
+2. View tasks
+3. Delete a task
+4. Exit
 ===========================
     `);
 };
