@@ -8,8 +8,8 @@ const fs = require('fs');
 const path = require('path');
 
 
-
-let todos = []; // Liste des tâches
+// Liste des tâches
+let todos = [];
 
 const showMenu = () => {
     console.log(`
