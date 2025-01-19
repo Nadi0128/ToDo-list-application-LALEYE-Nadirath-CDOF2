@@ -24,8 +24,12 @@ const showMenu = () => {
 
 const addTask = () => {
     rl.question('Entrez la tâche à ajouter : ', (task) => {
-        todos.push(task);
-        console.log(` Tâche ajoutée : "${task}"`);
+        if (task.trim() === '') {
+            console.log(' La tâche ne peut pas être vide.');
+        } else {
+            todos.push(task);
+            console.log(` Tâche ajoutée : "${task}"`);
+        }
         mainMenu();
     });
 };
