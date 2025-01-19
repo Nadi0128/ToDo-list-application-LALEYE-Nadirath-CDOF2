@@ -19,7 +19,7 @@ Before you begin, please ensure that you have the following installed:
    git clone <your_depot_link>
    cd <folder_name>
 
-   Ewample 
+   Example 
    ======== TODO LIST ========
 1. Add a task
 2. View tasks
