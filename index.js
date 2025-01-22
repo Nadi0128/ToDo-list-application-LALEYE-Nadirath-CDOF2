@@ -25,15 +25,21 @@ const showMenu = () => {
 const addTask = () => {
     rl.question('Entrez la tâche à ajouter : ', (task) => {
         if (task.trim() === '') {
-
             console.log(' La tâche ne peut pas être vide !');
-
-            console.log(' La tâche ne peut pas être vide!');
         } else {
-            todos.push(task);
-            console.log(` Tâche ajoutée : "${task}"`);
-        }
-        mainMenu();
+            rl.question('Entrez la date de début (YYYY-MM-DD) : ', (startDate) => {
+                // Valider le format de la date
+                const datePattern = /^\d{4}-\d{2}-\d{2}$/;
+                if (!startDate.match(datePattern)) {
+                    console.log('Format de date invalide, veuillez entrer une date au format YYYY-MM-DD');
+                    return addTask(); // relancer l'ajout si la date est invalide
+                }
+    
+                // Ajouter la tâche avec la date de début
+                todos.push({ task, startDate });
+                console.log(` Tâche ajoutée : "${task}" avec une date de début : "${startDate}"`);
+                saveTasks(); // Sauvegarder les tâches après l'ajout
+                mainMenu();
     });
 };
 
