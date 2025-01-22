@@ -57,6 +57,7 @@ const deleteTask = () => {
         const index = parseInt(number, 10) - 1;
         if (index >= 0 && index < todos.length) {
             const removed = todos.splice(index, 1);
+            saveTasks(); // Sauvegarder après ajout ou suppression
             console.log(` Tâche supprimée : "${removed[0]}"`);
         } else {
             console.log(' Numéro invalide.');
