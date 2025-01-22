@@ -48,7 +48,7 @@ const showTasks = () => {
 
 const deleteTask = () => {
     if (todos.length === 0) {
-        console.log(' Aucune tâche à supprimer.');
+        console.log(' Aucune tâche à supprimer !');
         mainMenu();
         return;
     }
@@ -79,7 +79,7 @@ const mainMenu = () => {
                 deleteTask();
                 break;
             case '4':
-                console.log(' Au revoir ');
+                console.log(' Au revoir :) ');
                 rl.close();
                 break;
             default:
