@@ -23,7 +23,6 @@ If not, this is how to install it:
 
 1. Open a terminal (PowerShell on Windows, Terminal on macOS/Linux).  
 2. Type `node -v` to check the Node.js version and `npm -v` to check the npm version. 
-
 ## Installation
 1. Clone the repository or copy the files to a local folder:
    ```bash
