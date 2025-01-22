@@ -31,12 +31,13 @@ If not, this is how to install it:
    cd <folder_name>
 
    Example 
-   ======== TO DO LIST <3 ========
-1. Add a task
-2. View tasks
-3. Delete a task
-4. Exit
+======== TODO LIST <3 ========
+1. Add a task  
+2. View tasks  
+3. Delete a task  
+4. Exit  
 ===========================
+
 Choose an option (1-4): 1
 Enter task to be added: Buy bread
 Task added: “Buy bread
