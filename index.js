@@ -25,6 +25,9 @@ const showMenu = () => {
 const addTask = () => {
     rl.question('Entrez la tâche à ajouter : ', (task) => {
         if (task.trim() === '') {
+
+            console.log(' La tâche ne peut pas être vide !');
+
             console.log(' La tâche ne peut pas être vide!');
         } else {
             todos.push(task);
@@ -48,7 +51,7 @@ const showTasks = () => {
 
 const deleteTask = () => {
     if (todos.length === 0) {
-        console.log(' Aucune tâche à supprimer.');
+        console.log(' Aucune tâche à supprimer !');
         mainMenu();
         return;
     }
@@ -57,6 +60,7 @@ const deleteTask = () => {
         const index = parseInt(number, 10) - 1;
         if (index >= 0 && index < todos.length) {
             const removed = todos.splice(index, 1);
+            saveTasks(); // Sauvegarder après ajout ou suppression
             console.log(` Tâche supprimée : "${removed[0]}"`);
         } else {
             console.log(' Numéro invalide.');
