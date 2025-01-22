@@ -20,7 +20,7 @@ Before you begin, please ensure that you have the following installed:
    cd <folder_name>
 
    Example 
-   ======== TODO LIST ========
+   ======== TODO LIST <3 ========
 1. Add a task
 2. View tasks
 3. Delete a task
