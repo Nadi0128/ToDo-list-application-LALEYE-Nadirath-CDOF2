@@ -12,7 +12,6 @@ A simple console application for managing a to-do list. You can easily add, view
 ## Prerequisites
 Before you begin, please ensure that you have the following installed:
 - Node.js](https://nodejs.org) (version 12 or higher)
-
 If not, this is how to install it:
 **Installing Node.js:**  
 
@@ -24,7 +23,6 @@ If not, this is how to install it:
 
 1. Open a terminal (PowerShell on Windows, Terminal on macOS/Linux).  
 2. Type `node -v` to check the Node.js version and `npm -v` to check the npm version. 
-
 
 ## Installation
 1. Clone the repository or copy the files to a local folder:
