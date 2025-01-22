@@ -25,7 +25,7 @@ const showMenu = () => {
 const addTask = () => {
     rl.question('Entrez la tâche à ajouter : ', (task) => {
         if (task.trim() === '') {
-            console.log(' La tâche ne peut pas être vide!');
+            console.log(' La tâche ne peut pas être vide.');
         } else {
             todos.push(task);
             console.log(` Tâche ajoutée : "${task}"`);
@@ -36,7 +36,7 @@ const addTask = () => {
 
 const showTasks = () => {
     if (todos.length === 0) {
-        console.log(' Aucune tâche pour le moment!');
+        console.log(' Aucune tâche pour le moment.');
     } else {
         console.log(' Voici vos tâches :');
         todos.forEach((task, index) => {
@@ -79,7 +79,7 @@ const mainMenu = () => {
                 deleteTask();
                 break;
             case '4':
-                console.log(' Au revoir :) ');
+                console.log(' Au revoir ');
                 rl.close();
                 break;
             default:
